@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div id="sticky-footer-page-wrap">
+        <header id="main-header">
+            <h1>Super Blog</h1>
+        </header>
+
+        <div id="main-content">
+            <div id="cat-tim-container" class="hide-container">
+                <div id="category-container" class="inner-container">
+                    <div id="category-title-container" class="cat-tim-title-container">
+                        <h3 class="rotate">Categories</h3>
+                    </div>
+                        {% block categories %}{% endblock %}
+                </div>
+                <div id="timeframe-container" class="inner-container">
+                    <div id="timeframe-title-container" class="cat-tim-title-container">
+                        <h3 class="rotate">Timeframes</h3>
+                    </div>
+                    <p><a href="#">Phasellus</a></p>
+                    <p><a href="#">Curabitur</a></p>
+                    <p><a href="#">Maecenas</a></p>
+                    <p><a href="#">Nullam</a></p>
+                    <p><a href="#">Quisque</a></p>
+                    <p><a href="#">Vivamus</a></p>
+                    <p><a href="#">Lorem</a></p>
+                    <p><a href="#">Donec</a></p>
+                    <p><a href="#">Nunc</a></p>
+                    <p><a href="#">Aliquam</a></p>
+                </div>
+            </div>
+
+            {% block content %}{% endblock %}
+
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <p>Rik Schoonbeek Web Development - 2017</p>
+    </footer>
+    <script src="{% static "js/main.js" %}"></script>
+</body>
+</html>

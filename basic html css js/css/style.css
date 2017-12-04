@@ -1,0 +1,179 @@
+/* ##### General Styling ##### */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Sticky footer */
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #179DD2;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.rotate {
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* ##### Header Styling ##### */
+
+#main-header {
+    background: #A5C9FC;
+    height: 50px;
+    text-align: center;
+}
+
+#main-header h1 {
+    margin: 0;
+    line-height: 50px;
+    color: white;
+}
+
+/* #### Main Nav Styling #### */
+
+
+
+/* ##### Content Styling ##### */
+
+#main-content {
+    padding: 0 25px;
+}
+
+.post-container {
+    background: white;
+    padding: 8px;
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    margin: 25px 0;
+}
+
+.post-container h1 {
+    margin: 0;
+}
+
+/* ##### Sidebars Styling ##### */
+
+.hide-container {
+    position: fixed;
+    top: 80px;
+    right: 0;
+}
+
+.show-container {
+    position: fixed;
+    top: 80px;
+    right: 280px;
+}
+
+.inner-container {
+    position: fixed;
+    background: pink;
+    width: 280px;
+    height: 300px;
+    padding: 10px;
+}
+
+.top {
+    z-index: 10;
+}
+
+#category-container p {
+    float: left;
+    margin: 5px;
+}
+
+#timeframe-container p {
+    float: left;
+    width: 120px;
+    margin: 5px;
+}
+
+#category-title-container,
+#timeframe-title-container {
+    background: white;
+}
+
+.cat-tim-title-container {
+    position: relative;
+    width: 30px;
+    height: 130px;
+    top: -20px;
+    right: 40px;
+}
+
+#categor-container {
+    background: yellow;
+}
+
+#category-title-container {
+    background: yellow;
+}
+
+#category-title-container h3,
+#timeframe-title-container h3 {
+    position: relative;
+    top: 86px;
+}
+
+#timeframe-container {
+    background: #22264E;
+    color: white;
+}
+
+#timeframe-title-container h3 {
+    top: 89px;
+}
+
+#timeframe-title-container {
+    background: #22264E;
+    top: 131px;
+}
+
+.inner-container p {
+    position: relative;
+    top: -150px;
+}
+
+.post-container {
+    overflow: auto;
+}
+
+.read-more-link {
+    float: right;
+}
+
+/* ##### Footer Styling ##### */
+
+
+
+/* ##### Media Queries ##### */
+
+@media screen and (min-width: 1024px) {
+
+    .main-post-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .post-container {
+        width: 45%;
+    }
+}
